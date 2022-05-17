@@ -1,14 +1,17 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 100;
+    color: #4d4e53;
+    line-height: 1.5;
 }
 
 header {
-    font-weight: 600;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: black;
 }
 
 #navbar {
@@ -24,7 +27,7 @@ header {
 }
 
 nav>header {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -68,7 +71,43 @@ code {
 }
 
 
-@media (max-height: 450px) {
-    #navbar {padding-top: 15px;}
-    #navbar a {font-size: 18px;}
+@media (max-width: 815px) {
+
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+
+    #navbar a {
+        text-align: center;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
   }
