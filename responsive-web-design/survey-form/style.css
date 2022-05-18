@@ -20,6 +20,7 @@
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 1.5px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -60,14 +61,14 @@ body::before {
     font-size: 0.9rem;
     font-style: italic;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #survey-form {
     width: 600px;
-    height: 800px;
+    height: fit-content;
     background-color: var(--color-darkblue-alpha);
-    padding: 40px;
+    padding: 20px 40px 80px 40px;
     margin-bottom: 0;
     justify-content: center;
     border-radius: 5px;
@@ -79,19 +80,50 @@ label {
     margin-bottom: 5px;
 }
 
+.form-group{
+    margin-block: 20px;
+}
+
 .form-field {
     display: block;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+    cursor: pointer;
 }
+
+.form-field:focus {
+    border-color: var(--color-babyblue);
+}
+
  .input-checkbox, .input-radio {
      display: inline-block;
+     margin: 5px 10px;
+     cursor: pointer;
  }
 
+ .input-label {
+     cursor: pointer;
+ }
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding-left: 10px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+}
 
 button {
     width: 100%;
     background-color: var(--color-green);
     color: var(--color-white);
     font-size: 0.9rem;
-    margin-top: 20px;
+    margin: 0px;
     padding: 10px;
+    cursor: pointer;
 }
