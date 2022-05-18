@@ -6,6 +6,7 @@
     font-weight: 100;
     color: #4d4e53;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 header {
