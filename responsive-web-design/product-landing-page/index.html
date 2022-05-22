@@ -6,21 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Original Trombones</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
 </head>
 <body>
     <header id="header">
-        <img src="" alt="original trombones logo" id="header-img">
-        <nav id="nav-bar">
-            <a href="#" class="nav-link">Feautures</a>
-            <a href="#" class="nav-link">How It Works</a>
-            <a href="#" class="nav-link">Pricing</a>
+        <div class="logo">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Original Trombones Logo" id="header-img">
+        </div>
+
+        <nav id="nav-bar">    
+            <ul>
+                <li>
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li>
+                    <a href="#how_it_works" class="nav-link">How it Works</a>
+                </li>
+                <li>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
         </nav>
-        <embed src="" type="video" id="video">
-        <form action="" id="form">
-            <input type="email" id="email" placeholder="Enter email">
-            <input type="submit" value="submit" id="submit">
-        </form>
     </header>
+
+    <div id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+            <input type="submit" value="GET STARTED" id="submit" class="btn">
+        </form>
+    </div>
+
+    <div id="features">
+        <div>
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <span>
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </span>
+        </div>
+        <div>
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <span>
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </span>
+        </div>
+        <div>
+            <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+            <span>
+                <h2>Premium Materials</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </span>
+        </div>
+    </div>
+
+    <div id="how_it_works">
+        <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="pricing">
+        <div class="table">
+            <div class="table-header">TENOR TROMBONE</div>
+            <h2>$600</h2>
+            <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <input type="button" value="SELECT" class="btn">
+        </div>
+        <div class="table">
+            <div class="table-header">BASS TROMBONE</div>
+            <h2>$900</h2>
+            <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <input type="button" value="SELECT" class="btn">
+        </div>
+        <div class="table">
+            <div class="table-header">VALVE TROMBONE</div>
+            <h2>$1200</h2>
+            <ul>
+                <li>Plays similar to a Trumpet.</li>
+                <li>Great for Jazz Bands.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <input type="button" value="SELECT" class="btn">
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Copyright 2016, Original Trombones</p>
+    </footer>
     
 </body>
 </html>
