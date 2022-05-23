@@ -1,0 +1,161 @@
+/* Color Scheme */
+
+:root {
+    --main-white: hsl(0, 0%, 94%);
+    --accent-color: hsl(167, 76%, 37%);
+    --dark-bg: hsl(212, 15%, 22%);
+    --secondary-bg: hsl(221, 12%, 42%);
+  }
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+h1 {
+    font-size: 5rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+  
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 8vh;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+#navbar > ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+#navbar > ul > li {
+    margin: 0px 10px;
+    font-size: 2.2rem;
+    padding-block: 2.5vh;
+    padding-inline: 20px;
+}
+
+#navbar > ul > li:hover {
+    background-color: var(--secondary-bg);
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-bg);
+}
+
+#welcome-section{
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section > h1 {
+    margin-bottom: 0px;
+}
+
+#welcome-section > p {
+    color: var(--accent-color);
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+#project {
+    background-color: var(--secondary-bg);
+}
+
+#contact {
+    height: 80vh;
+}
+
+#contact > p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.social-btn {
+    margin: 20px;
+    font-weight: 100;
+}
+
+.social-btn:hover {
+    transform: translateY(10px);
+}
+
+.social-btn > i {
+    margin: 5px;
+}
+
+#footer {
+    height: 12vh;
+    background-color: var(--dark-bg);
+    border-top: 3px solid var(--accent-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+#footer > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+#footer > span > p {
+    margin-inline: 10px;
+}
+
+@media (max-width: 460px) {
+    .nav {
+      justify-content: center;
+    }
+}
