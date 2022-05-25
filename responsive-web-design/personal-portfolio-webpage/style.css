@@ -2,8 +2,8 @@
 
 :root {
     --main-white: hsl(0, 0%, 94%);
-    --accent-color: hsl(167, 76%, 37%);
-    --dark-bg: hsl(212, 15%, 22%);
+    --accent-color: #17a687;
+    --dark-bg: #303841;
     --secondary-bg: hsl(221, 12%, 42%);
     --text-orange: hsl(16, 100%, 66%);
   }
@@ -144,7 +144,7 @@ body {
   }
   
   .project-tile:hover .code {
-    color: var(--text-orange);
+    color: var(--accent-color);
   }
 
 .btn {
@@ -208,6 +208,12 @@ body {
 
 #footer > span > p {
     margin-inline: 10px;
+}
+
+@media (max-width: 800px) {
+    .social-btn {
+        display: block;
+    }
 }
 
 @media (max-width: 460px) {
