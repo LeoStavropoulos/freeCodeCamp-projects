@@ -5,6 +5,7 @@
     --accent-color: hsl(167, 76%, 37%);
     --dark-bg: hsl(212, 15%, 22%);
     --secondary-bg: hsl(221, 12%, 42%);
+    --text-orange: hsl(16, 100%, 66%);
   }
 
 h1, h2 {
@@ -136,6 +137,15 @@ body {
     padding: 10px;
     text-align: center;
 }
+
+.code {
+    color: var(--dark-bg);
+    transition: color 0.3s ease-out;
+  }
+  
+  .project-tile:hover .code {
+    color: var(--text-orange);
+  }
 
 .btn {
     display: inline-block;
