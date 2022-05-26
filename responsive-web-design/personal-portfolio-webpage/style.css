@@ -53,7 +53,7 @@ body {
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     background-color: var(--accent-color);
@@ -63,8 +63,21 @@ body {
     z-index: 10;
 }
 
+.logo {
+    margin-left: 10%;
+    max-height: 8vh;
+    max-width: 8vh;
+    display: block;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
 #navbar > ul {
     display: flex;
+    justify-content: flex-end;
     margin-right: 20px;
 }
 
@@ -145,6 +158,12 @@ body {
   
   .project-tile:hover .code {
     color: var(--accent-color);
+  }
+  
+  .project-tile:hover img {
+    filter: brightness(60%);
+    
+    transition: all 1s ease;
   }
 
 .btn {
