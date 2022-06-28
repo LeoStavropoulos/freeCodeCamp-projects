@@ -18,6 +18,11 @@
 - ### **Data Visualization:**
 - ### **Quality Assurance:**
 - ### **Scientific Computing with Python:**
+  1. *Arithmetic Formatter*
+  2. *Time Calculator*
+  3. *Budget App*
+  4. *Polygon Area Calculator*
+  5. *Probability Calculator*
 - ### **Data Analysis with Python:**
 - ### **Information Security Certification:**
 - ### **Machine Learning with Python:**
