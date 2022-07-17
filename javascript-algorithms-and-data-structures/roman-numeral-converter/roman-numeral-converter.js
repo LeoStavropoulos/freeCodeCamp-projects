@@ -5,7 +5,7 @@
  * @param {*} num 
  * @returns 
  */
-function convertToRoman(num) {
+export function convertToRoman(num) {
     
     //analyzing number
     let millions = Math.floor(num / 1_000_000)
@@ -193,59 +193,3 @@ function convertToRoman(num) {
 
     return romanNum;
 }
-
-// TEST DATA
-console.log(convertToRoman(2));
-console.log("II");
-console.log(convertToRoman(3));
-console.log("III");
-console.log(convertToRoman(4));
-console.log("IV");
-console.log(convertToRoman(5));
-console.log("V");
-console.log(convertToRoman(9));
-console.log("IX");
-console.log(convertToRoman(12));
-console.log("XII");
-console.log(convertToRoman(16));
-console.log("XVI");
-console.log(convertToRoman(29));
-console.log("XXIX");
-console.log(convertToRoman(44));
-console.log("XLIV");
-console.log(convertToRoman(45));
-console.log("XLV");
-console.log(convertToRoman(68));
-console.log("LXVIII");
-console.log(convertToRoman(83));
-console.log("LXXXIII");
-console.log(convertToRoman(97));
-console.log("XCVII");
-console.log(convertToRoman(99));
-console.log("XCIX");
-console.log(convertToRoman(400));
-console.log("CD");
-console.log(convertToRoman(500));
-console.log("D");
-console.log(convertToRoman(501));
-console.log("DI");
-console.log(convertToRoman(649));
-console.log("DCXLIX");
-console.log(convertToRoman(798));
-console.log("DCCXCVIII");
-console.log(convertToRoman(891));
-console.log("DCCCXCI");
-console.log(convertToRoman(1000));
-console.log("M");
-console.log(convertToRoman(1004));
-console.log("MIV");
-console.log(convertToRoman(1006));
-console.log("MVI");
-console.log(convertToRoman(1023));
-console.log("MXXIII");
-console.log(convertToRoman(2014));
-console.log("MMXIV");
-console.log(convertToRoman(3999));
-console.log("MMMCMXCIX");
-console.log(convertToRoman(2_869_993));
-console.log("M\u0304M\u0304D\u0304C\u0304C\u0304C\u0304L\u0304X\u0304MX\u0304CMXCIII")
