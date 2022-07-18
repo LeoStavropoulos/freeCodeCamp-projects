@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="title">Cash Register</h1>
+        <p class="description">
+            
+        </p>
+        
+        <div class="register">
+            <div class="register-group">
+                <label for="">1¢</label>
+                <input class="input-register" name="PENNY" type="number" min="0" value="0" step="0.01">
+            </div>
+            <div class="register-group">
+                <label for="">5¢</label>
+                <input class="input-register" name="NICKEL" type="number" min="0" value="0" step="0.05">
+            </div>
+            <div class="register-group">
+                <label for="">10¢</label>
+                <input class="input-register" name="DIME" type="number" min="0" value="0" step="0.1">
+            </div>
+            <div class="register-group">
+                <label for="">25¢</label>
+                <input class="input-register" name="QUARTER" type="number" min="0" value="0" step="0.25">
+            </div>
+            <div class="register-group">
+                <label for="">1$</label>
+                <input class="input-register" name="ONE" type="number" min="0" value="0" step="1">
+            </div>
+            <div class="register-group">
+                <label for="">5$</label>
+                <input class="input-register" name="FIVE" type="number" min="0" value="0" step="5">
+            </div>
+            <div class="register-group">
+                <label for="">10$</label>
+                <input class="input-register" name="TEN" type="number" min="0" value="0" step="10">
+            </div>
+            <div class="register-group">
+                <label for="">20$</label>
+                <input class="input-register" name="TWENTY" type="number" min="0" value="0" step="20">
+            </div>
+            <div class="register-group">
+                <label for="">100$</label>
+                <input class="input-register" name="ONE HUNDRED" type="number" min="0" value="0" step="100">
+            </div>
+        </div>
+        <hr>
+        <div class="inputs">
+            <input class="user-input" type="number" min="0" step="0.01" id="price" placeholder="Price...">
+            <input class="user-input" type="number" min="0" step="0.01" id="cash" placeholder="Cash...">
+        </div>
+        <p class="output hidden" id="status"></p>
+        <ul class="output hidden" id="change"></ul>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
