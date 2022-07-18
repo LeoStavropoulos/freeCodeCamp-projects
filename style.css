@@ -142,6 +142,11 @@ a{
     justify-content: center;
 }
 
+.project-container > .project > h1 {
+    margin-bottom: auto;
+    margin-top: 20px;
+}
+
 /* ? ------------------------------------------------------------ */
 
 .hidden {
@@ -180,11 +185,11 @@ a{
 }
 
 @media (hover: hover) {
-    .project-container > .project > span {
+    .project-container > .project > .hidden-text {
         display: none;
     }
     
-    .project-container > .project:hover > span {
+    .project-container > .project:hover > .hidden-text {
         display: flex;
     }
 }
