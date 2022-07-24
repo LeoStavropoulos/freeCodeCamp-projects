@@ -72,7 +72,7 @@ a{
     cursor: default !important;
 }
 
-#project-section {
+.project-section {
     background-color: #1B1B32;
     height: 80vh;
     cursor: default;
