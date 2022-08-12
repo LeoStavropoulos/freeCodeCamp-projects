@@ -10,6 +10,7 @@ const Home = () =>{
             </nav>
             <section className="project-section">
                 <Link to="quote" className="project">Random Quote Machine</Link>
+                <Link to="markdown" className="project">Markdown Previewer</Link>
             </section>
         </>
     )
