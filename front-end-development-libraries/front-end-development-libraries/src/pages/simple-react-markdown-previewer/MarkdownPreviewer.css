@@ -1,5 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
 .markdown-previewer {
-    background-color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #87b5b5;
     width: 100vw;
     height: 100vh;
+    padding: 10%;
+    overflow: auto;
+}
+
+.window {
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.navbar{
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: #4aa3a3;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+.navbar > header {
+    margin-left: .5em;
+}
+
+#editor {
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #c0d8d8;
+    overflow-wrap: break-word;
+    font-size: 0.875rem;
+    min-height: 200px;
+    resize: vertical;
+}
+
+
+#preview {
+    border: 1px solid black;
+    width: 100%;
+    min-height: 200px;
+    padding: 5px 10px;
+    background-color: #c0d8d8;
+    overflow-wrap: break-word;
+    font-size: 0.875rem;
+}
+
+#preview img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1400px) {
+    .markdown-previewer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .window{
+        width: 600px;
+    }
 }
