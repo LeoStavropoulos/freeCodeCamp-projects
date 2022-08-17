@@ -11,6 +11,7 @@ const Home = () =>{
             <section className="project-section">
                 <Link to="quote" className="project">Random Quote Machine</Link>
                 <Link to="markdown" className="project">Markdown Previewer</Link>
+                <Link to="drum" className="project">Drum Machine</Link>
             </section>
         </>
     )

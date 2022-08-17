@@ -1,0 +1,22 @@
+.drum-machine-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8d8d8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+.drum-machine {
+    width: 600px;
+    height: 300px;
+    border: 5px solid orange;
+    background-color: #b3b3b3;
+    padding: 10px;
+}
+
+.drum-machine > header {
+    font-size: 1.5rem;
+    float: right;
+}
