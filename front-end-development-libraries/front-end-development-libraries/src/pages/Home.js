@@ -12,6 +12,7 @@ const Home = () =>{
                 <Link to="quote" className="project">Random Quote Machine</Link>
                 <Link to="markdown" className="project">Markdown Previewer</Link>
                 <Link to="drum" className="project">Drum Machine</Link>
+                <Link to="calculator" className="project">JavaScript Calculator</Link>
             </section>
         </>
     )
