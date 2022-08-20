@@ -1,0 +1,108 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+    font-family: 'Digital';
+    src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+    src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+    format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+    format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+    format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+    format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+    format('svg');
+}
+
+.calculator-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #c2c2d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    border: 2px solid #47476b;
+    background-color: #000;
+    padding: 5px;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "dis dis dis dis"
+        "ac ac div mul"
+        "seven eight nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal"
+    ;
+}
+
+.calc-display {
+    grid-area: dis;
+    background-color: black;
+    text-align: end;
+    color: white;
+    font-size: 40px;
+    font-family: "Digital", monospace;
+    min-height: 85px;
+}
+
+.calc-result {
+    color: orange;
+    font-size: 0.8em;
+    text-align: end;
+    display: block;
+    height: 40%;
+    padding-right: 5px;
+}
+
+.calc-input {
+    display: block;
+    padding-right: 5px;
+    text-align: end;
+}
+
+.calc-btn {
+    padding: 20px 40px;
+    color: white;
+    background-color: #4D4D4D;
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 32px;
+    border-radius: 10px;
+}
+
+.calc-btn:hover {
+    border-color: gray;
+}
+
+.ac {
+    grid-area: ac;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.bg-red {
+    background-color: #ac3939;
+}
+
+.bg-blue {
+    background-color: #004466;
+}
+
+.bg-lightgray {
+    background-color: #666666;
+}
