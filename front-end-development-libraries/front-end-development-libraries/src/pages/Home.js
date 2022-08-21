@@ -13,6 +13,7 @@ const Home = () =>{
                 <Link to="markdown" className="project">Markdown Previewer</Link>
                 <Link to="drum" className="project">Drum Machine</Link>
                 <Link to="calculator" className="project">JavaScript Calculator</Link>
+                <Link to="clock" className="project">25 + 5 Clock</Link>
             </section>
         </>
     )
